@@ -1,0 +1,1 @@
+https://github.com/bhcosta90/laravel-eloquent-uuid/blob/master/src/Database/Eloquent/Uuid.php
