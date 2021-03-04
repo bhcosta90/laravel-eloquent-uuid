@@ -1,5 +1,5 @@
 {
-    "name": "bhcosta90/laravel-uuid",
+    "name": "bhcosta90/eloquent-uuid",
     "type": "library",
     "description": "laravel uuid a simple, automatic UUID generator for any model based on Laravel.",
     "keywords": [
@@ -12,12 +12,12 @@
         "Laravel",
         "generator"
     ],
-    "homepage": "https://github.com/emadadly/laravel-uuid",
+    "homepage": "https://github.com/bhcosta90/laravel-eloquent-uuid",
     "license": "MIT",
     "authors": [
         {
-            "name": "Emad Adly",
-            "email": "thisEmad@gmail.com",
+            "name": "Bruno Costa",
+            "email": "bhcosta90@gmail.com",
             "homepage": "http://devgist.com",
             "role": "Developer"
         }
@@ -53,7 +53,7 @@
         },
         "laravel": {
             "providers": [
-                "Emadadly\\LaravelUuid\\LaravelUuidServiceProvider"
+                "Costa\\LaravelUuid\\LaravelUuidServiceProvider"
             ]
         }
     },
