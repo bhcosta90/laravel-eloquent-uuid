@@ -13,17 +13,17 @@ trait Uuids
      */
     protected static function bootUuids()
     {
-        // static::creating(function ($model) {
-        //     if (!$model->{config('uuid.default_uuid_column')}) {
-        //         $model->{config('uuid.default_uuid_column')} = $model->generateUuid();
-        //     }
-        // });
-        // static::saving(function ($model) {
-        //     $original_uuid = $model->getOriginal(config('uuid.default_uuid_column'));
-        //     if ($original_uuid !== $model->{config('uuid.default_uuid_column')}) {
-        //         $model->{config('uuid.default_uuid_column')} = $original_uuid;
-        //     }
-        // });
+        static::creating(function ($model) {
+            if (!$model->{config('uuid.default_uuid_column')}) {
+                $model->{config('uuid.default_uuid_column')} = $model->generateUuid();
+            }
+        });
+        static::saving(function ($model) {
+            $original_uuid = $model->getOriginal(config('uuid.default_uuid_column'));
+            if ($original_uuid !== $model->{config('uuid.default_uuid_column')}) {
+                $model->{config('uuid.default_uuid_column')} = $original_uuid;
+            }
+        });
     }
 
     /**
